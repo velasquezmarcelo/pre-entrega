@@ -2,7 +2,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* toma como tamaño del elemento el borde */
+    box-sizing: border-box; 
 }
 /* 1rem = 10px */
 html {
@@ -11,4 +12,95 @@ html {
 
 body {
     font-family: "Caveat Brush", cursive;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    background-color: #0D0D0D;
+    color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    /* el body ocupa toda la pantalla */
+    height: 100vh;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 3rem;
+    /* toma todo el espacio disponible, es el mas grande */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color:#F5F5F5;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+h2 {
+    color: #F5F5F5;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.btn {
+    background-color: #D4AF37;
+    color: #0D0D0D;
+    border: none;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header {
+    background-color: #0D0D0D; 
+    color: #D4AF37;           
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-log {
+    margin-left: 1.5rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.header-nav ul li a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: inherit;
+    display: inline-block;
+    padding: 2rem;
+}
+
+.header-nav {
+    margin-right: 2rem;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 2rem;
+}
+
+footer {
+    background-color: #0D0D0D;
+    color: #F5F5F5;           
+    border-top: 0.1rem solid #D4AF37;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer nav ul li {
+    padding: 2rem;
 }
