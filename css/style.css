@@ -288,3 +288,7 @@ video {
     min-height: 15rem;
     resize: vertical;
 }
+
+.titulo-otros {
+    color: aqua;
+}
